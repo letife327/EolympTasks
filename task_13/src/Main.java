@@ -9,7 +9,6 @@ public class Main {
             if(n<0)
                 count++;
             else if (n==0) break;
-
         }
         System.out.println(count);
     }
