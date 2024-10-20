@@ -4,13 +4,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String sentence = sc.nextLine();
-        long count = 0;
-        String[] words = sentence.split(" ");
-        for (String word : words) {
-            count++;
+        int count = 0;
+        String s= sentence.trim().replaceAll("\\s+", " ");
+
+        for (int i=0; i<s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                count++;
+            }
 
         }
-        System.out.println(count);
+        System.out.println(++count);
     }
 
 }
