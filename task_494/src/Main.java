@@ -11,6 +11,7 @@ public class Main {
       String sentence = sc.nextLine();
       String s1 = sentence.toUpperCase();
       int count = 0;
+      System.out.println("salam");
       for (int i = 0; i < s1.length(); i++) {
           switch (s1.charAt(i)) {
               case 'A':
