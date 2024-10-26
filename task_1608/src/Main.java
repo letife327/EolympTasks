@@ -16,7 +16,7 @@ public class Main {
         for(int i = 0; i < str.length(); i++) {
             arr[i] = str.charAt(i);
         }
-
+        System.out.println("salam");
         int lngth = str.length()-1;
         for(int i=0;i<arr.length-1;i++){
             if(arr[i]!=arr[lngth-i]){
