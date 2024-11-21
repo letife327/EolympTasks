@@ -1,23 +1,30 @@
-import java.util.Scanner;
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("salam");
-        Scanner sc = new Scanner(System.in);
-        long n = sc.nextLong(); //6
-        for (long i = n - 1; i >= 0; i--) { //5
-            if (i % 2 == 0 ) {
-                for (long j = 0; j <= n - 1; j++) {
-                    if (Math.pow(2, j) == i) {
-                        System.out.println(i);
-                        return;
-                    }
 
-                }
-            }else{
-                continue;
-            }
 
+
+
+        LocalDate birthday = LocalDate.of(2004,11,8);
+        LocalDate today = LocalDate.now();
+        if(today.getMonth() == birthday.getMonth()&&
+        today.getDayOfMonth() == birthday.getDayOfMonth()) {
+            System.out.println("Happy Birthday :)");
+        }else{
+            System.out.println("Today is not your birthday :(");
         }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
